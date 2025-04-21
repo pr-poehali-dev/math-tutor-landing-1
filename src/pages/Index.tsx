@@ -97,9 +97,9 @@ const Index = () => {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-creamy-400">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://cdn.poehali.dev/files/4b5ed834-978f-4887-a52f-70d769a05dca.jpg" 
                     alt="Репетитор по математике" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-spacegray-300 p-4 rounded-2xl border border-spacegray-100">
@@ -233,14 +233,14 @@ const Index = () => {
               <div className="space-y-6">
                 <div className="h-40 bg-spacegray-300 rounded-2xl overflow-hidden">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://cdn.poehali.dev/files/1425f826-45a0-4c6c-a9e9-8e4df7c665a9.jpg" 
                     alt="Математика" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="h-56 bg-spacegray-300 rounded-2xl overflow-hidden">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://cdn.poehali.dev/files/ea23df8f-c4e1-4d8f-be7d-24de9a3ccaa5.jpg" 
                     alt="Обучение" 
                     className="w-full h-full object-cover"
                   />
@@ -249,14 +249,14 @@ const Index = () => {
               <div className="space-y-6 mt-10">
                 <div className="h-56 bg-spacegray-300 rounded-2xl overflow-hidden">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://cdn.poehali.dev/files/3ef2162a-6245-4d2a-8fc9-1dea99ec94d9.jpg" 
                     alt="Занятие" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="h-40 bg-spacegray-300 rounded-2xl overflow-hidden">
                   <img 
-                    src="/placeholder.svg" 
+                    src="https://cdn.poehali.dev/files/734bbc7f-4667-4b42-89cf-2a5921ef2401.jpg" 
                     alt="Экзамен" 
                     className="w-full h-full object-cover"
                   />
