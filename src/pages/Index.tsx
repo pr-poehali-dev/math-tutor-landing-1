@@ -6,15 +6,59 @@ import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-spacegray">
       {/* Шапка */}
       <header className="py-6 sticky top-0 bg-spacegray/95 backdrop-blur-sm z-10 border-b border-spacegray-100/20">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-creamy-100 font-medium text-lg">Репетитор математики</div>
+          
+          {/* Навигационное меню */}
+          <div className="hidden md:flex items-center gap-6">
+            <Button 
+              variant="ghost" 
+              className="text-creamy-300 hover:text-creamy-100 hover:bg-spacegray-300"
+              onClick={() => scrollToSection('home')}
+            >
+              Главная
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="text-creamy-300 hover:text-creamy-100 hover:bg-spacegray-300"
+              onClick={() => scrollToSection('services')}
+            >
+              Услуги
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="text-creamy-300 hover:text-creamy-100 hover:bg-spacegray-300"
+              onClick={() => scrollToSection('about')}
+            >
+              Обо мне
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="text-creamy-300 hover:text-creamy-100 hover:bg-spacegray-300"
+              onClick={() => scrollToSection('testimonials')}
+            >
+              Отзывы
+            </Button>
+            <Button 
+              className="bg-creamy-100 text-spacegray-400 hover:bg-creamy-300"
+              onClick={() => scrollToSection('contact')}
+            >
+              Записаться
+            </Button>
+          </div>
+          
+          {/* Мобильная кнопка записи */}
           <Button 
-            className="bg-creamy-100 text-spacegray-400 hover:bg-creamy-300"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="md:hidden bg-creamy-100 text-spacegray-400 hover:bg-creamy-300"
+            onClick={() => scrollToSection('contact')}
           >
             Записаться
           </Button>
@@ -22,7 +66,7 @@ const Index = () => {
       </header>
 
       {/* Главный экран */}
-      <section className="section pt-20 md:pt-32 pb-16 md:pb-24">
+      <section id="home" className="section pt-20 md:pt-32 pb-16 md:pb-24">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 animate-fade-in">
@@ -36,14 +80,14 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   className="bg-creamy-100 text-spacegray-400 hover:bg-creamy-300 px-8 py-6 text-lg"
-                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => scrollToSection('services')}
                 >
                   Узнать о занятиях
                 </Button>
                 <Button 
                   variant="outline" 
                   className="border-creamy-300 text-creamy-100 hover:bg-spacegray-300 px-8 py-6 text-lg"
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => scrollToSection('contact')}
                 >
                   Записаться на занятие
                 </Button>
@@ -121,7 +165,7 @@ const Index = () => {
       </section>
 
       {/* С кем работаю */}
-      <section className="section">
+      <section id="about" className="section">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -224,7 +268,7 @@ const Index = () => {
       </section>
 
       {/* Отзывы */}
-      <section className="section bg-spacegray-400">
+      <section id="testimonials" className="section bg-spacegray-400">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Отзывы учеников</h2>
