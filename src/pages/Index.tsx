@@ -15,7 +15,7 @@ const Index = () => {
       {/* Шапка */}
       <header className="py-6 sticky top-0 bg-spacegray/95 backdrop-blur-sm z-10 border-b border-spacegray-100/20">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-creamy-100 font-medium text-lg">Репетитор математики</div>
+          <div className="text-creamy-100 font-medium text-lg">Учитель математики</div>
           
           {/* Навигационное меню */}
           <div className="hidden md:flex items-center gap-6">
@@ -97,8 +97,8 @@ const Index = () => {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-creamy-400">
                   <img 
-                    src="https://cdn.poehali.dev/files/4b5ed834-978f-4887-a52f-70d769a05dca.jpg" 
-                    alt="Репетитор по математике" 
+                    src="https://cdn.poehali.dev/files/ecd19386-860f-4961-82fd-9287a2f8d845.jpg" 
+                    alt="Учитель математики" 
                     className="w-full h-full object-cover object-center"
                   />
                 </div>
@@ -361,7 +361,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-creamy-300/60 mb-4 md:mb-0">
-              © 2024 Репетитор математики. Все права защищены.
+              © 2025 Учитель математики. Все права защищены.
             </p>
             <div className="flex gap-4">
               <Button variant="ghost" className="text-creamy-300/80 hover:text-creamy-100 hover:bg-spacegray-300">
